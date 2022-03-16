@@ -4,6 +4,13 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
+F13::å
+F14::ø 
+F15::æ
++F13::Å
++F14::Ø
++F15::Æ
+
 RAlt::return
 
 #If NOT GetKeyState("RAlt", "P")
@@ -33,10 +40,3 @@ RAlt::return
     `;::ø
     '::æ
 }
-
-F13::å
-F14::ø
-F15::æ
-+F13::Å
-+F14::Ø
-+F15::Æ
