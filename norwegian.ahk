@@ -16,27 +16,26 @@ RAlt::return
 #If NOT GetKeyState("RAlt", "P")
     CapsLock::return
 
-#If (GetKeyState("RAlt", "P") || GetKeyState("CapsLock", "P"))
-{
-    i::Up
-    k::Down 
-    j::Left
-    l::Right
-    c::^c 
-    v::^v 
-    Space::Ctrl
-    f::Shift 
-    a::Alt
-    o::End
-    u::Home 
-    m::Enter
-    h::BackSpace
-    n::Delete
-    .::PgUp
-    /::PgDn
-    1::F1
-    r::F5
-    [::å
-    `;::ø
-    '::æ
-}
+;#If (GetKeyState("RAlt", "P") || GetKeyState("CapsLock", "P"))
+;{]
+CapsLock & i::Up
+CapsLock & k::Down 
+CapsLock & j::Left
+CapsLock & l::Right
+CapsLock & c::^c 
+CapsLock & v::^v 
+CapsLock & Space::Ctrl
+CapsLock & f::Shift 
+CapsLock & a::Alt
+CapsLock & o::End
+CapsLock & u::Home 
+CapsLock & m::Enter
+CapsLock & h::BackSpace
+CapsLock & n::Delete
+CapsLock & .::PgUp
+CapsLock & /::PgDn
+CapsLock & 1::F1
+CapsLock & r::F5
+CapsLock & [::å
+CapsLock & `;::ø
+CapsLock & '::æ
