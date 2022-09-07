@@ -22,7 +22,7 @@ RAlt::return
 
 
 CapsLock & i::Up
-CapsLock & k::Down 
+CapsLock & k::Down  
 CapsLock & j::Left
 CapsLock & l::Right
 CapsLock & c::^c 
