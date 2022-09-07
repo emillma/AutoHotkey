@@ -12,11 +12,14 @@ F15::æ
 +F15::Æ
 
 RAlt::return
+^CapsLock::return
+^+CapsLock::return
+; ^!CapsLock::return
+^+!CapsLock::return
++CapsLock::return
++!CapsLock::return
+!CapsLock::return
 
-CapsLock::return
-#If GetKeyState("Alt", "P") and GetKeyState("Shift", "P")
-    CapsLock::SetCapsLockState, % !GetKeyState("CapsLock", "T")
-return
 
 CapsLock & i::Up
 CapsLock & k::Down 
