@@ -12,14 +12,8 @@ F15::æ
 +F15::Æ
 
 RAlt::return
-^CapsLock::return
-^+CapsLock::return
-; ^!CapsLock::return
-^+!CapsLock::return
-+CapsLock::return
-+!CapsLock::return
-!CapsLock::return
-
+*CapsLock::return
+CapsLock & RAlt::SetCapsLockState, % !GetKeyState("CapsLock", "T")
 
 CapsLock & i::Up
 CapsLock & k::Down  
