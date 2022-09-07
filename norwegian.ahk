@@ -12,12 +12,11 @@ F15::æ
 +F15::Æ
 
 RAlt::return
+CapsLock::
+If GetKeyState("Alt", "P") and GetKeyState("Shift", "P")
+    SetCapsLockState, % !GetKeyState("CapsLock", "T")
+return
 
-#If NOT GetKeyState("RAlt", "P")
-    CapsLock::return
-
-;#If (GetKeyState("RAlt", "P") || GetKeyState("CapsLock", "P"))
-;{]
 CapsLock & i::Up
 CapsLock & k::Down 
 CapsLock & j::Left
@@ -34,8 +33,35 @@ CapsLock & h::BackSpace
 CapsLock & n::Delete
 CapsLock & .::PgUp
 CapsLock & /::PgDn
-CapsLock & 1::F1
 CapsLock & r::F5
-CapsLock & [::å
-CapsLock & `;::ø
-CapsLock & '::æ
+
+CapsLock & [::
+If NOT GetKeyState("Shift", "P")
+ Send, å
+Else
+ Send, Å
+return
+CapsLock & `;::
+If NOT GetKeyState("Shift", "P")
+ Send, ø
+Else
+ Send, Ø
+return
+CapsLock & '::
+If NOT GetKeyState("Shift", "P")
+ Send, æ
+Else
+ Send, Æ
+return
+
+CapsLock & 1::F1
+CapsLock & 2::F2
+CapsLock & 3::F3
+CapsLock & 4::F4
+CapsLock & 5::F5
+CapsLock & 6::F6
+CapsLock & 7::F7
+CapsLock & 8::F8
+CapsLock & 9::F9
+CapsLock & 0::F10
+
