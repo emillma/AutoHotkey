@@ -26,7 +26,7 @@ ReleaseAllKeys(){
 *CapsLock Up::ReleaseAllKeys()
 
 #If GetKeyState("CapsLock", "P")
-    ; RAlt::SetCapsLockState, % !GetKeyState("CapsLock", "T")
+    RAlt::SetCapsLockState, % !GetKeyState("CapsLock", "T")
     i::Up
     k::Down  
     j::Left
