@@ -11,10 +11,22 @@ F15::æ
 +F14::Ø
 +F15::Æ
 
+ReleaseAllKeys(){
+    if getKeyState("Ctrl"){
+        send, {Ctrl up}
+    } 
+    if getKeyState("Alt"){
+        send, {Alt up}
+    } 
+    if getKeyState("Shift"){
+        send, {Shift up}
+    }
+}
 *CapsLock::return
-*CapsLock Up::send, {Alt up}{Shift up}{Ctrl up}
+*CapsLock Up::ReleaseAllKeys()
+
 #If GetKeyState("CapsLock", "P")
-    RAlt::SetCapsLockState, % !GetKeyState("CapsLock", "T")
+    ; RAlt::SetCapsLockState, % !GetKeyState("CapsLock", "T")
     i::Up
     k::Down  
     j::Left
